@@ -1,3 +1,5 @@
+const fetch = require('node-fetch');
+
 export const handler = async (event) => {
 
   const result = await fetch('/random.json?language=en');
