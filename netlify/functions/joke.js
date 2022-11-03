@@ -1,11 +1,11 @@
 export const handler = async (event) => {
 
   const result = await fetch('/random.json?language=en');
-  result.json().then(data => {
+  const data = await result.json();
      return {
         statusCode: 200,
-        body: data.text
+        body: JSON.stringify(data.text)
     }
-  })
+
     
 }
