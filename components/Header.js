@@ -1,7 +1,11 @@
+import { Typography } from "@mui/material";
+
 export default function Header({ title }) {
   return (
     <>
-      <h1 className="title">{title}</h1>
+      <Typography variant="h3" align="center">
+        {title}
+      </Typography>
  
     </>
   );
